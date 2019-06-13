@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NotificationsFragment">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:weightSum="3"
+        android:padding="5dp"
+        android:id="@+id/notification_header"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:textSize="20sp"
+
+            android:layout_weight="1"
+            android:gravity="center"
+          />
+
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:text="Event ID"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+          />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Contact"
+         />
+
+
+    </LinearLayout>
+ <android.support.v4.widget.SwipeRefreshLayout
+     android:layout_width="match_parent"
+     android:layout_marginTop="40dp"
+     android:id="@+id/swipe_refresh_notifications"
+     android:layout_height="match_parent">
+
+     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:id="@+id/notification_recycler_view"
+         android:name="com.example.knowacause.HomeFragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         app:layoutManager="LinearLayoutManager"
+         tools:context=".Fragments.HomeFragment"
+        />
+ </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/notification_progressbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

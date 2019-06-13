@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<EditText
+    android:layout_width="match_parent"
+    android:id="@+id/guest_name_notification_dialog"
+    android:layout_height="wrap_content"
+    android:hint="Name"
+    android:padding="10dp"
+    android:textSize="20sp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/guest_contact_notification_dialog"
+        android:layout_height="wrap_content"
+        android:hint="Mobile"
+        android:padding="10dp"
+        android:textSize="20sp"
+        />
+</LinearLayout>

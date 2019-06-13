@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KnowACause</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about">This Project is Inspired by the website "Know A Cause" that i developed 2 years back. The Project\'s Sole Purpose of creation
+        is to learn and implement the backend RESTAPI\'s in Python using Flask, with authentication and database for users and integrate that with this
+        Android Mobile frontend App using Fragments and Logins.</string>
+    <string name="about_title">About</string>
+</resources>

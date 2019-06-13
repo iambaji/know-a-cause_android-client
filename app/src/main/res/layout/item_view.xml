@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="5sp"
+            android:textSize="25sp"
+            android:text="Post Title"
+            android:textStyle="bold"
+            android:id="@+id/post_title"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_date"
+                android:text="12th"
+                android:padding="5sp"
+                android:paddingLeft="10sp"
+                android:gravity="left"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_added_by"
+                android:text="Baji"
+                android:layout_below="@id/post_date"
+                android:gravity="left"
+
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:padding="5sp"
+            android:id="@+id/post_desc"
+            android:text="Post Description"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
